@@ -37,16 +37,20 @@ It includes:
 # Clone the repository
 git clone https://github.com/dArK-sEiD05/Loan-prediction-model
 cd Loan-prediction-model
+```
 
 # Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ## 🔗 API Endpoints  
 
 ###  POST `/predict` → Predict Loan Default Risk Score  
 
-```json
 # 📥 Input
+```bash
+
 {
   "Income": 55000,
   "LoanAmount": 12000,
@@ -63,16 +67,19 @@ pip install -r requirements.txt
   "EmploymentType": "Full-time",
   "LoanPurpose": "Auto"
 }
-
+```
 # 📤 Output
+```bash
 {
   "risk_score": 0.27
 }
+```
 
 
 ### GET `/model_info` → return model metrics
 
 # 📤 Output
+```bash
 {
   "metrics": {
     "accuracy": 0.88,
@@ -95,7 +102,7 @@ pip install -r requirements.txt
     ...
   }
 }
-``` 
+```
 
 ## 📊 Visualizations
 
